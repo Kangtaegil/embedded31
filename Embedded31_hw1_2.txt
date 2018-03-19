@@ -1,0 +1,42 @@
+*apt-get update
+  - package 목록 갱신
+
+*apt-get upgrade
+ apt-get -s dist-upgrade
+  - package 업데이트
+
+*apt-get install package-name
+  - package 설치
+
+*apt-get --reinstall install package-name
+  - package 다시 설치
+
+*apt-get remove package-name
+  - package 삭제
+
+*apt-get --purge remove package-name
+  - package 관련 설정 파일 포함 삭제
+ 
+*apt-cache search package-name
+ apt-cache search --names-only package-name
+  - package 검색
+
+*apt-cache package-name
+ apt-cache package-name | sort
+ apt-cache package-name | grep "filter"
+  - 설치 가능한 package 조회
+
+*apt-cache show package-name
+  - package 상세 조회
+
+*/var/cache/apt/archives/
+  - 다운로드된 package 파일
+
+*dpkg -l [package-name]
+  - 설치된 package 조회
+
+*dpkg -L package-name
+  - package에 포함된 파일 목록
+
+*dpkg -S `which git`
+  - 파일명으로 package 검색

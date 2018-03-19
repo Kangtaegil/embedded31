@@ -1,0 +1,12 @@
+*useradd, adduser
+  - 사용자 추가
+
+*userdel, deluser
+  - 사용자 삭제
+
+*passwd
+  - 비밀번호 변경
+
+*useradd와 adduser의 차이점
+  - useradd : 단순형으로 사용자를 추가 -> 우분투에서 사용자의 홈 디렉토리를 추가하지 않음
+  - adduser : 복합형으로 사용자를 추가 -> 우분투에서 사용자의 홈 디렉토리를 추가함
